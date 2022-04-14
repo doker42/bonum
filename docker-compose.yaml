@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  web:
+    container_name: web
+    build: ./web
+    ports:
+        - 9080:80
+    volumes:
+        - ./:/var/www/html/
+
+  db:
+    image: mariadb
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    volumes:
+      - ./databases:/var/lib/mariadb
+    ports:
+       - 3308:3306
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+       - 8088:8080
+
