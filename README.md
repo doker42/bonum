@@ -91,8 +91,8 @@ php artisan jwt:secret
 
 7. Start migrations
 
-- php artisan migrate
+- 1 php artisan migrate
 
 8. Seeding start data (permissions etc)
 
-# php artisan db:seed
+### php artisan db:seed
