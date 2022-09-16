@@ -55,8 +55,15 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
-Laravel 9.2 project requirements:
+## Sreda-app
+
+Laravel 9.2 project 
+
+## Requirements
 PHP >= 8.0
+MySQL >= 5.7
+
+## Instalation
 
 1. Clone git repo using SSH
 
@@ -91,8 +98,8 @@ php artisan jwt:secret
 
 7. Start migrations
 
-- 1 php artisan migrate
+php artisan migrate
 
 8. Seeding start data (permissions etc)
 
-### php artisan db:seed
+php artisan db:seed
